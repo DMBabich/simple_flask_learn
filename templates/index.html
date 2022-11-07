@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>first app</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+</head>
+<body>
+    <form method="post">
+        <p>Введите первое число</p>
+        <input type="number" name="input_first">
+        <p>Выберете операцию</p>
+        <p>
+            <select name="operand[]">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+        </p>
+        <p>Введите второе число</p>
+        <input type="number" name="input_second">
+        <br>
+        <br>
+        <button type="submit">Подсчитать</button>
+    </form>
+    <p id="result"> {{ result }} </p>
+</body>
+</html>
